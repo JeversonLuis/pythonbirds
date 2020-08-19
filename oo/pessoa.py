@@ -17,5 +17,10 @@ if __name__ == '__main__':
     print(pai.idade)
     for i in pai.filhos:
         print(filho.nome)
+    pai.sobrenome = 'Gonçalves'
+    print(pai.__dict__)
+    print(filho.__dict__)
+    del pai.filhos
+    print(pai.__dict__)
 
 
